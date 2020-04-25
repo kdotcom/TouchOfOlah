@@ -28,6 +28,15 @@ ul {
     color: #ffffff;
 }
 
+.dark {
+    padding: 15px;
+    background: #35424a;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
 /* Header */
 header {
     background: #35424a;
@@ -81,7 +90,8 @@ header a:hover {
     background-size: cover;
     background-position: center;
     text-align: center;
-    color: #fff;
+    color: #fff5ee;
+    padding-bottom: 20px;
 }
 
 .darken {
@@ -89,13 +99,17 @@ header a:hover {
 }
 
 #showcase h1 {
-    padding-top: 100px;
-    font-size: 55px;
+    padding-top: 80px;
+    font-size: 60px;
+    font-weight: 900;
     margin-bottom: 10px;
+    text-shadow: 2px 2px 10px #111;
 }
 
 #showcase p {
     font-size: 20px;
+    line-height: 30px;
+    text-shadow: 2px 2px 5px #111;
 }
 
 #newsletter {
@@ -127,12 +141,55 @@ header a:hover {
 #boxes .box {
     float: left;
     text-align: center;
-    width: 30%;
+    width: 31%;
     padding: 10px;
 }
 
 #boxes .box img {
-    width: 90px;
+    width: 60%;
+    height: 150px;
+}
+
+p a {
+    text-decoration: none;
+    color: #e9d3cd;
+}
+
+.cool-images img {
+    width: 28%;
+    height: 250px;
+    margin: 30px 25px;
+}
+
+section .cool-images ul li {
+    display: inline;
+}
+
+/* Sidebar */
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 50px;
+}
+
+aside#sidebar .book-us input, aside#sidebar .book-us textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+/* main-col */
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+/* Services */
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
 }
 
 footer {
@@ -141,4 +198,41 @@ footer {
     color: #fff;
     background-color: #e8491d;
     text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px) {
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 20px;
+    }
+
+    #showcase h1 {
+        margin-top: 40px;
+    }
+
+    #newsletter button, .book-us button {
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"], .book-us textarea {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+
+
 }
